@@ -1,0 +1,143 @@
+.root{
+    --primary-:(#2b3768)
+    --secondary-:(#ccc394)
+    --primary-variant:aquamarine;
+    --secondary-variant:black;
+    --base-spacing-:(10px)
+    --border-radius-:(8px)
+}
+
+.slideshow-container { 
+    width: 80%;
+    margin: auto;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+.slideshow-slide {
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+h1{
+    font-size: 5em ;
+    font-style: italic;
+    background: url(https://images.pexels.com/photos/2091161/pexels-photo-2091161.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    margin: 25px ;
+    padding:3em;
+    display: flex;
+    justify-content: center;
+}
+
+#url{
+    padding:1em;
+    margin: 1em;
+    display:flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:2em;
+    display: flex;
+    justify-content:space-around;
+    align-content: flex-end;
+    
+}
+
+li {
+    border: 2px solid black;
+    margin: 0;
+    padding: 0.5em;
+    border-radius: 20px;
+    display: flex;
+}
+
+ul.is-hidden--mobile{
+    padding:0;
+}
+
+is-hidden--mobile{
+    padding:0;
+    margin:0;
+    height:0;
+}
+
+.signInBtn,
+.createAnAccountBtn{
+    max-width: 60px ;
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+   
+}
+
+#signInBtn,
+#createAnAccountBtn{
+    background-color:#52ff2f;
+    font-size: 1em;
+
+}
+#signInBtn:hover,
+#createAnAccountBtn:hover{
+ background-color: rgb(0, 132, 255);
+ border-radius:8px;
+}
+
+#navBtn{
+    padding: 8px ;
+    margin: 20px ;
+    display:flex;
+    flex-direction: row;
+    max-width: 60vw ;
+    justify-content:center;
+    
+}
+
+#navBtn:hover {
+background-color: rgb(0,132,255);
+}
+
+#inputInfo{
+    border:solid black 2px ;
+    max-width: 100vw;
+}
+
+/*Form*/
+form{
+    display:flex;
+    flex-direction: column;
+    margin:var(--base-spacing);
+    }
+  
+  input,
+  textarea{
+    border:solid thin black;
+    max-width:80vw;
+  }
+  
+  form div{
+    display:flex;
+    flex-direction: column;
+    margin:var(--base-spacing);
+  }
+  
+  input[type="submit"]{
+    border-radius: var(--base-spacing);
+    display: inline-block;
+    margin:20px 0;
+    min-height:calc(var(--base-spacing)*6);
+    max-width:calc(var(--base-spacing)*12);
+    text-align: center;
+    background: #52ff2f
+  }
+
+  /*display: flex;
+    flex-direction:;
+    flex-wrap:;
+    align-content:;
+    justify-content:;
+    margin:0;
+    padding:0;
