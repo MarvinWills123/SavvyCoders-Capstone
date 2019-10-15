@@ -10,11 +10,13 @@
 .slideshow-container { 
     width: 80%;
     margin: auto;
+    padding:0;
     border: 5px solid black;
     overflow: hidden;
 }
 
-.slideshow-slide {
+.slideshow-slide
+ {
     display: flex;
     width: 100%;
     height: 500px;
@@ -26,6 +28,7 @@ h1{
     background: url(https://images.pexels.com/photos/2091161/pexels-photo-2091161.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
     margin: 25px ;
     padding:3em;
+    max-height: var(--base-spacing-);
     display: flex;
     justify-content: center;
 }
@@ -37,9 +40,10 @@ h1{
     align-items: center;
 }
 
-ul {
+ nav ul {
     list-style-type:none;
     margin:0;
+    padding: 0px;
     padding:2em;
     display: flex;
     justify-content:space-around;
@@ -47,13 +51,19 @@ ul {
     
 }
 
-li {
+nav li {
     border: 2px solid black;
     margin: 0;
     padding: 0.5em;
     border-radius: 20px;
     display: flex;
 }
+
+section {
+    display: flex;
+    flex-direction: row;
+} 
+
 
 ul.is-hidden--mobile{
     padding:0;
@@ -115,7 +125,7 @@ form{
   input,
   textarea{
     border:solid thin black;
-    max-width:80vw;
+    max-width:600px;
   }
   
   form div{
@@ -128,8 +138,8 @@ form{
     border-radius: var(--base-spacing);
     display: inline-block;
     margin:20px 0;
-    min-height:calc(var(--base-spacing)*6);
-    max-width:calc(var(--base-spacing)*12);
+    min-height:var(--base-spacing);
+    max-width:100px;
     text-align: center;
     background: #52ff2f
   }
