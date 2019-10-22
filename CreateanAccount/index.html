@@ -12,41 +12,50 @@
 <h1>Create An Account </h1>
  </header>
     <main> 
-            <span class="fas fa-bars" class = "is-hidden--desktop"></span> 
+            <span class="fas fa-bars is-hidden--desktop"></span> 
+            <nav>
             <ul class="is-hidden--mobile is-hidden--tablet is-shown--desktop">
                 <li><a href="../">Home</a></li> 
                 <li><a href="../about">About</a></li>
                 <li><a href="../contact us">Contact Us</a></li>
                 <li><a href="../gallery">Gallery</a></li>
             </ul>
+        </nav>
             <!--Input field-->
+            <form>
                 <div>
-                <h4>First Name</h4><input id="inputInfo">
+                    <h4>First Name</h4>
+                    <input type="text" name="fname" id="first_name">
+            
+                    <h4>Last Name</h4>
+                    <input type="text" name="lname" id="last_name">
                 
-                <h4>Last Name</h4><input id="inputInfo">
+                    <h4>Email Address</h4>
+                    <input type="email" name="email" id="email">
                 
-                <h4>Email Address</h4><input id="inputInfo">
+                    <h4>Username</h4>
+                    <input type="text" name="username" id="username">
                 
-                <h4>Username</h4><input id="inputInfo" >
-               
-                <h4>Password</h4><input id="inputInfo">
-
-                <h4>Confirm Password</h4><input id="inputInfo">
-            </div>
-            <br>
-            <br>
-            <button id="createAnAccountBtn">Create Your Account</button> 
-
-       
+                    <h4>Password</h4>
+                    <input type="password" name="password" id="password">
+                
+                    <h4>Confirm Password</h4>
+                    <input type="password" name="password_confirm" id="password_confirm">
+                </div>
+        </form>
+        <br>
+            <button id="createAnAccountBtn"><a href="../squaredaway">Create Your Account</a></button>  
     </main>
 </body>
 <footer>
+    <nav>
         <ul>
                 <li><a href="../">Home</a></li> 
                 <li><a href="../about">About</a></li>
                 <li><a href="../contact us">Contact Us</a></li>
                 <li><a href="../gallery">Gallery</a></li>
              </ul>
-        <p>&copy;2019 MarvinInc. &bullet;All Rights Reserved </p>
+            </nav>
+        <p>&copy;2019 MarvinInc &bullet;All Rights Reserved </p>
 </footer>
 </html>

@@ -1,54 +1,50 @@
-.root{
+/*.root{
     --primary-:(#2b3768)
     --secondary-:(#ccc394)
     --primary-variant:aquamarine;
     --secondary-variant:black;
     --base-spacing-:(10px)
     --border-radius-:(8px)
+}*/
+
+
+
+body {
+    background-color: #2b3768;
 }
 
-.slideshow-container { 
-    width: 80%;
-    margin: auto;
-    padding:0;
-    border: 5px solid black;
-    overflow: hidden;
-}
-
-.slideshow-slide
- {
-    display: flex;
-    width: 100%;
-    height: 500px;
+main {
+    display: block;
 }
 
 h1{
     font-size: 5em ;
     font-style: italic;
-    background: url(https://images.pexels.com/photos/2091161/pexels-photo-2091161.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    font-family: Russo;
+    background: url(https://media.defense.gov/2013/Jun/12/2000041604/-1/-1/0/120406-F-GK203-065.JPG);
+    border: 0 ;
     margin: 25px ;
     padding:3em;
-    max-height: var(--base-spacing-);
     display: flex;
     justify-content: center;
 }
 
 #url{
-    padding:1em;
-    margin: 1em;
     display:flex;
-    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    max-height: 1000px;
 }
 
+
  nav ul {
-    list-style-type:none;
     margin:0;
     padding: 0px;
     padding:2em;
     display: flex;
     justify-content:space-around;
     align-content: flex-end;
-    
+    text-decoration: none;
 }
 
 nav li {
@@ -57,13 +53,23 @@ nav li {
     padding: 0.5em;
     border-radius: 20px;
     display: flex;
+    background-color: #52ff2f;
+    
 }
 
-section {
-    display: flex;
-    flex-direction: row;
-} 
+nav li :hover {
+text-decoration: none;
+border-radius: 50px;
+background-color: rgb(0,132,255);
+}
 
+section ul{
+     display: flex;
+    flex-direction: column;
+    width:33%;
+    
+
+}
 
 ul.is-hidden--mobile{
     padding:0;
@@ -75,25 +81,29 @@ is-hidden--mobile{
     height:0;
 }
 
-.signInBtn,
-.createAnAccountBtn{
+button.signInBtn,
+button.createAnAccountBtn{
     max-width: 60px ;
     margin: 0;
     padding: 0;
-    border-radius: 8px;
    
 }
 
 #signInBtn,
 #createAnAccountBtn{
     background-color:#52ff2f;
+    border-radius: 8px;
     font-size: 1em;
-
+    flex-direction: row ;
+    display: flex;
 }
+
 #signInBtn:hover,
 #createAnAccountBtn:hover{
  background-color: rgb(0, 132, 255);
  border-radius:8px;
+ display: flex;
+ flex-direction: row;
 }
 
 #navBtn{
@@ -117,7 +127,7 @@ background-color: rgb(0,132,255);
 
 /*Form*/
 form{
-    display:flex;
+    display:block;
     flex-direction: column;
     margin:var(--base-spacing);
     }
@@ -144,6 +154,20 @@ form{
     background: #52ff2f
   }
 
+  .slideshow-container { 
+    width: 80%;
+    margin: auto;
+    padding:0;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+.slideshow-slide
+ {
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
   /*display: flex;
     flex-direction:;
     flex-wrap:;
