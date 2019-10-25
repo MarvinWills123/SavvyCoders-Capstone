@@ -3,4 +3,4 @@
     "stylelint-config-standard",
     "stylelint-prettier/recommended"
   ]
-}
+};
