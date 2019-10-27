@@ -170,7 +170,8 @@ padding: 0;
 }
 
 .sign-in-btn,
-.create-account-btn{
+.create-account-btn
+{
   padding: 1px;
   margin: 1px;
   border: 1px;
@@ -180,7 +181,8 @@ padding: 0;
 }
 
 .sign-in-btn a,
-.create-account-btn a {
+.create-account-btn a
+ {
     padding:1px;
     margin: 1px ;
     border: 1px;
@@ -192,6 +194,7 @@ background-color: #52ff2f;
 display: flex;
 
 }
+
 
 .is-hidden {
   height: 0;
