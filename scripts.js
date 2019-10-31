@@ -7,7 +7,7 @@
 
 //}); 
 
- //createAnAccountBtn = document.querySelector('#createAnAccountBtn');
+ //  createAnAccountBtn = document.querySelector('#createAnAccountBtn');
 //for (i = 0; i < createAnAccountBtn.length; i += 1){
     //createAnAccountBtn[i].addEventListener('click', function(event){
     //event.preventDefault();
@@ -24,7 +24,7 @@ const nextBtn = document.querySelector('#nextBtn');
 
 //Counter
 let counter = 1;
-let size = slideshowImages[0].clientWidth;
+let size = slideshowImages[0];
 
 slideshowSlide.style.transform = 'translateX(' + (- size * counter) + 'px)';
 
@@ -46,7 +46,7 @@ prevBtn.addEventListener('click', function(){
 
 });
 
-slideshowSlide.addEventListener('transitionEnd', function(){
+slideshowSlide.addEventListener('transitionEnd', function (){
     if (slideshowImages[counter].id ==='lastClone'){
         slideshowSlide.style.transition = "none";
         counter = slideshowImages.length - 2;
@@ -59,4 +59,3 @@ slideshowSlide.addEventListener('transitionEnd', function(){
         slideshowSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
 });
-

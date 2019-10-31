@@ -1,0 +1,404 @@
+.root{
+    --primary-:(#2b3768)
+    --secondary-:(#ccc394)
+    --primary-variant:aquamarine;
+    --secondary-variant:black;
+    --base-spacing-:(10px)
+    --border-radius-:(8px)
+}
+
+/*font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Righteous', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Alegreya', serif;*/
+
+body{
+font-family: Roboto Condensed, sans-serif;
+}
+
+title {
+font-family: Cinzel, serif ;
+}
+
+q{
+    font-family: Noto Serif;
+    font-style:italic;
+}
+
+h1{
+    font-family: Cinzel, serif;
+    font-style: italic;
+    text-align: center;
+    color: #ccc394;
+}
+
+
+h2{
+    font-family: Noto, serif;
+}
+
+section {
+display: flex;
+flex-direction: row ;
+width:33%;
+}
+
+
+nav {
+border-top: 50px  ;
+  border-bottom: 10px ;
+  min-height: 100px;
+}
+
+nav a{
+    font-size: 30px;
+    padding: 0;
+    margin: 8px;
+}
+
+footer {
+  border-top: 8px ;
+  font-size: 1em;
+}
+
+.fab {
+  font-size: 24px;
+  color: black;
+}
+
+.fas {
+  font-size: 3em;
+  color: black;
+}
+nav.fas {
+  margin: 8px;
+  transform: translateX(80vw);
+  position: absolute;
+}
+
+.is-hidden--mobile{
+font-size:0;
+height:0;
+}
+
+
+main {
+  background-color: #2b3768;
+}
+
+header {
+  background: #2b3768;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2{
+  color: aqua;
+}
+
+
+nav ul {
+  list-style-type: none ;
+  align-content: center;
+  background-color: #2b3768;
+}
+
+nav li {
+  padding: 8px ;
+}
+footer ul{
+  /*By default, this will do flex-direction: row;*/
+  display:flex;
+  justify-content: space-around;
+  padding:0;
+}
+
+footer{
+  border-top:var(--border-primary);
+  padding:calc(8px*2);
+}
+
+footer a{
+  color: blue;
+}
+
+section{
+  padding:16px;
+}
+
+nav a {
+background:#52ff2f;
+text-decoration: none ;
+border-radius: 20px;
+padding:10px;
+}
+
+nav a:hover {
+  color: white;
+  background: #2b3768;
+}
+
+
+.learn-more-btn {
+background-color:#52ff2f;
+padding:8px;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+}
+
+.learn-more-btn a ,
+.learn-more-btn:hover{
+    color:blue;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer a{
+background-color:#52ff2f;
+padding: 0;
+border-radius: 25px;
+}
+
+nav .is-hidden--mobile a{
+padding: 0;
+
+}
+
+.sign-in-btn,
+.create-account-btn
+{
+  padding: 1px;
+  margin: 1px;
+  border: 1px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sign-in-btn a,
+.create-account-btn a
+ {
+    padding:1px;
+    margin: 1px ;
+    border: 1px;
+    border-radius: 20px;
+text-decoration: none;
+font-size: 1.5em;
+color:blue;
+background-color: #52ff2f; 
+display: flex;
+
+}
+
+
+.is-hidden {
+  height: 0;
+  font-size: 0;
+}
+
+.hero {
+  background: url(https://picsum.photos/680/420) center center no-repeat;
+  /*background-repeat:no-repeat;*/
+  /* background-size: contain; */
+  background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  max-height: 420px;
+}
+
+.slideshow-container { 
+    width: 85vw;
+    margin: auto;
+    padding:0;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+.slideshow-slide{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+.flex-container-style{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+}
+/*Form*/
+form{
+  display:flex;
+  flex-direction: column;
+  margin:8px;
+  }
+
+input,
+textarea{
+  border:solid thin black;
+  max-width:50vw;
+}
+
+form div{
+  display: flex;
+  flex-direction: column;
+  margin:8px;
+}
+
+input[type="submit"]{
+  border-radius: 8px;
+  display: inline-block;
+  margin:20px 0;
+  min-height:48px;
+  max-width:calc(8px*12);
+  text-align: center;
+  background: #52ff2f
+}
+
+new messages
+figcaption {
+  margin: 8px 0;
+  text-align: center;
+}
+
+@media screen and (min-width:768px){
+header {background: url(http://www.federalflags.com/Shared/Images/Product/3x5ft-Sewn-Nylon-American-Flag/Nylon-American-Flag-closeup.jpg);}
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+#url{
+    margin:0 ;
+    padding:0 ;
+    max-height: 60vh;
+
+}
+
+nav a{
+  padding:8px;
+  display:flex;
+}
+
+
+.hero{
+  height:40vh;
+}
+
+.is-hidden--tablet{
+  font-size:0;
+  height:0;
+  }
+}
+
+@media screen and (min-width:1024px){
+  header{
+    flex-direction:row;
+    padding:calc(8px*2);
+  }
+
+
+  .section p{
+    margin-bottom: auto;
+}
+
+  nav ul{
+    display:flex;
+    justify-content:space-around;
+  }
+
+.flex-container--desktop{
+  display:flex;
+}
+
+.flex-row--desktop{
+flex-direction: row;
+}
+/*JavaScript CSS*/
+.is-error {
+border:2px solid red;
+box-shadow: 1px 1px 1px;
+}
+
+.is-success{
+border:2px solid rgb(6, 209, 6);
+box-shadow: 1px 1px 1px;
+}
+
+/*------*/
+
+#msg{
+  max-width: 550px;
+}
+
+  .is-hidden--desktop{
+  font-size:0;
+  height:0;
+  }
+
+ .is-shown--desktop{
+font-size:initial;
+  }
+}
+  
+
+/*Form*/
+form{
+    display:block;
+    flex-direction: column;
+    margin:8px;
+    }
+  
+  input,
+  textarea{
+    border:solid thin black;
+    max-width:600px;
+  }
+  
+  form div{
+    display:flex;
+    flex-direction: column;
+    margin:8px;
+  }
+  
+  input[type="submit"]{
+    border-radius: 8px;
+    display: inline-block;
+    margin:20px 0;
+    min-height:8px;
+    max-width:100px;
+    text-align: center;
+    background: #52ff2f
+  }
+
+ 
+
+
+  /*display: flex;
+    flex-direction:;
+    flex-wrap:;
+    align-content:;
+    justify-content:;
+    margin:0;
+    padding:0;
+
+    /*.gallery 
+  display: flex;
+  flex-direction: column;
+  margin: 8px auto;
+  width: 80vw;
+*/
+
+/*.gallery figure 
+  margin: 8px 0;
+*/
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

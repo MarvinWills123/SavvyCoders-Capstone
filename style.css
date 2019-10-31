@@ -53,7 +53,7 @@ border-top: 50px  ;
 
 nav a{
     font-size: 30px;
-    padding: px;
+    padding: 0;
     margin: 8px;
 }
 
@@ -221,8 +221,7 @@ display: flex;
     overflow: hidden;
 }
 
-.slideshow-slide
- {
+.slideshow-slide{
     display: flex;
     width: 100%;
     height: 500px;
@@ -248,7 +247,7 @@ textarea{
 }
 
 form div{
-  display:;
+  display: flex;
   flex-direction: column;
   margin:8px;
 }
@@ -314,11 +313,6 @@ nav a{
     display:flex;
     justify-content:space-around;
   }
-
-
-{
-  height:60vh;
-}
 
 .flex-container--desktop{
   display:flex;
