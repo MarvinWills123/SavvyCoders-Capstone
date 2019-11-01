@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya:700i|Cinzel:700|Noto+Serif:700|Righteous|Roboto+Condensed:700&display=swap" rel="stylesheet">
     <link href="../style.css" rel="stylesheet">
 </head>
-<body>
+<div id="root"></div>
+<!--<body>
     <main> 
     <header>
     <h1>Create An Account </h1>
@@ -18,17 +19,17 @@
             <span class="fas fa-bars is-hidden--desktop"></span> 
             <nav>
             <ul class="is-hidden--mobile is-hidden--tablet is-shown--desktop">
-                <li><a href="../">Home</a></li> 
-                <li><a href="../about">About</a></li>
-                <li><a href="../contact us">Contact Us</a></li>
-                <li><a href="../gallery">Gallery</a></li>
+                <li><a href="../" data-navigo>Home</a></li> 
+                <li><a href="../about" data-navigo>About</a></li>
+                <li><a href="../contact us" data-navigo>Contact Us</a></li>
+                <li><a href="../gallery" data-navigo>Gallery</a></li>
             </ul>
         </nav>
             <!--Input field-->
-            <form>
+            <!--<form>
                 <div>
                     <h4>First Name</h4>
-                    <input type="text" name="fname" id="first_name">
+                    <input type="text" name="first-name" id="first_name">
             
                     <h4>Last Name</h4>
                     <input type="text" name="lname" id="last_name">
@@ -47,18 +48,19 @@
                 </div>
         </form>
         <br>
-            <button class="create-account-btn"><a href="../squaredaway">Create Your Account</a></button>  
+            <button class="create-account-btn"><a href="../squaredaway" data-navigo>Create Your Account</a></button>  
             <footer>
                     <nav>
                         <ul>
-                                <li><a href="../">Home</a></li> 
-                                <li><a href="../about">About</a></li>
-                                <li><a href="../contact us">Contact Us</a></li>
-                                <li><a href="../gallery">Gallery</a></li>
+                                <li><a href="../" data-navigo>Home</a></li> 
+                                <li><a href="../about" data-navigo>About</a></li>
+                                <li><a href="../contact us" data-navigo>Contact Us</a></li>
+                                <li><a href="../gallery" data-navigo>Gallery</a></li>
                              </ul>
                             </nav>
                         <p>&copy;2019 MarvinInc &bullet;All Rights Reserved </p>
-                </footer>
+                </footer>-->
+                <script src ="./index.js"></script>
 </main>
 </body>
 </html>

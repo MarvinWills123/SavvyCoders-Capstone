@@ -22,7 +22,7 @@ export default {
     </div>
 </form>
 <br>
-<button class="create-account-btn"><a href="../squaredaway">Create Your Account</a></button> 
+<button class="create-account-btn"><a href="SquaredAway" data-navigo>Create Your Account</a></button> 
     `
 
 };

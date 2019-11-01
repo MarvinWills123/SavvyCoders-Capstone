@@ -15,6 +15,7 @@ font-family: 'Alegreya', serif;*/
 
 body{
 font-family: Roboto Condensed, sans-serif;
+color:white;
 }
 
 title {
@@ -38,6 +39,9 @@ h2{
     font-family: Noto, serif;
 }
 
+h4{
+  color:black;
+}
 section {
 display: flex;
 flex-direction: row ;
@@ -182,7 +186,7 @@ padding: 0;
 
 .sign-in-btn a,
 .create-account-btn a
- {
+{
     padding:1px;
     margin: 1px ;
     border: 1px;
@@ -201,17 +205,7 @@ display: flex;
   font-size: 0;
 }
 
-.hero {
-  background: url(https://picsum.photos/680/420) center center no-repeat;
-  /*background-repeat:no-repeat;*/
-  /* background-size: contain; */
-  background-size: cover;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  height: 20vh;
-  max-height: 420px;
-}
+
 
 .slideshow-container { 
     width: 85vw;
@@ -252,6 +246,8 @@ form div{
   margin:8px;
 }
 
+
+
 input[type="submit"]{
   border-radius: 8px;
   display: inline-block;
@@ -262,11 +258,7 @@ input[type="submit"]{
   background: #52ff2f
 }
 
-new messages
-figcaption {
-  margin: 8px 0;
-  text-align: center;
-}
+
 
 @media screen and (min-width:768px){
 header {background: url(http://www.federalflags.com/Shared/Images/Product/3x5ft-Sewn-Nylon-American-Flag/Nylon-American-Flag-closeup.jpg);}
@@ -288,9 +280,7 @@ nav a{
 }
 
 
-.hero{
-  height:40vh;
-}
+
 
 .is-hidden--tablet{
   font-size:0;

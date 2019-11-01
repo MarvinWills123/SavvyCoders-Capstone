@@ -1,6 +1,6 @@
-export default{
+export default {
 heading:'Gallery',
-main:`   <section>
+main:`  <section>
 <div class = "slideshow-container">
 <div class = "slideshow-slide">
 <img src ="https:images.pexels.com/photos/1661818/pexels-photo-1661818.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"id="lastClone" alt="slideshowImages">
@@ -17,5 +17,6 @@ main:`   <section>
 <button id= "nextBtn" class="fas fa-chevron-right">Next</button>
 </section>`
 };
+
 
 

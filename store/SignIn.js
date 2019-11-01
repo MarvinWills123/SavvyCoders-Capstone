@@ -10,11 +10,11 @@ main:`<div>
 <br>
 
 
-<button class="sign-in-btn"><a href="./squaredaway">Sign In<a><button> 
+<button class="sign-in-btn"><a href="SquaredAway" data-navigo>Sign In<a><button> 
 <br>
-<button class="create-account-btn"><a href="./createanaccount">Create An Account<a><button>
+<button class="create-account-btn"><a href="CreateAnAccount" data-navigo>Create An Account<a><button>
 <br>
 <br>
-<a href= "Forgot PasswordUsername"> Forgot PasswordUsername<a>
+<a href= "Forgot PasswordUsername" data-navigo> Forgot PasswordUsername<a>
 `
 };
