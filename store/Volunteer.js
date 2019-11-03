@@ -1,7 +1,9 @@
 export default{
 heading:'Volunteer',
-main:`<section>
-<h1>Train a Service Dog</h1>
+main:`
+<q> Coming Soon...</q>
+<section>
+<p>Train a Service Dog</p>
 <p>Got Your Six</p>
 <section> Disabled Veterans</section>
 <p>Build Make Renovations to Houses</p>

@@ -1,9 +1,9 @@
 export default{
     heading:'Resume Builder Continued..',
-    main:`<p> You're almost done </p>
+    main:`<p> You're almost done!! </p>
     <section class="form-container">
     <form>
-    <div                   
+    <div>                 
     <h2>Education</h2>
     <textarea></textarea>
     <h2>Other Skills</h2>

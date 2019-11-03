@@ -8,7 +8,7 @@ export {default as SignIn} from "./SignIn"
 export {default as SquaredAway} from "./SquaredAway"
 export {default as Volunteer} from "./Volunteer"
 export {default as ResumeBuilder} from "./ResumeBuilder"
-export {default as ResumeBuilderCon} from "./ResumeBuilderCon"
-export {default as ResumeBuilderCon2} from "./ResumeBuilderCon"
+export {default as ResumeBuildercon} from "./ResumeBuildercon"
+export {default as ResumeBuildercon2} from "./ResumeBuildercon2"
 
 

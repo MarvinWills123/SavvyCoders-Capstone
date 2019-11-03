@@ -290,7 +290,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   heading: 'Sign In',
-  main: "<div> \n            \n<h4>Username<h4><input id=\"inputInfo\">\n\n<h4>Password<h4><input id=\"inputInfo\">\n\n<div>\n<br>\n\n\n<button class=\"sign-in-btn\"><a href=\"SquaredAway\" data-navigo>Sign In<a><button> \n<br>\n<button class=\"create-account-btn\"><a href=\"CreateAnAccount\" data-navigo>Create An Account<a><button>\n<br>\n<br>\n<a href= \"Forgot PasswordUsername\" data-navigo> Forgot PasswordUsername<a>\n"
+  main: "<div> \n            \n<h4>Username<h4><input id=\"inputInfo\">\n\n<h4>Password<h4><input id=\"inputInfo\">\n\n<div>\n<br>\n\n\n<button class=\"sign-in-btn\"><a href=\"SquaredAway\" data-navigo>Sign In</a><button> \n<br>\n<button class=\"create-account-btn\"><a href=\"CreateAnAccount\" data-navigo>Create An Account</a><button>\n<br>\n<br>\n<a href= \"Forgot PasswordUsername\" data-navigo> Forgot PasswordUsername</a>\n"
 };
 exports.default = _default;
 },{}],"store/SquaredAway.js":[function(require,module,exports) {
@@ -302,7 +302,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   heading: 'SQUARED AWAY',
-  main: "<section>\n <button class=\"navBtn\"><a href=\"EducationBenefits\" data-navigo>Education Benefits</a></button>\n <button class=\"navBtn\"><a href=\"Volunteer\" data-navigo>Volunteer</a></button>\n <button class=\"navBtn\"><a href=\"ResumeBuilder\" data-navigo>Resume Builder</a></button>\n <button class=\"navBtn\"><a href= \"\" data-navigo>Gatherings</a></button>\n</section>"
+  main: "<section id=\"navBtn\">\n <div>\n <button><a href=\"EducationBenefits\" data-navigo>Education Benefits</a></button>\n <button><a href=\"Volunteer\" data-navigo>Volunteer</a></button>\n <button><a href=\"ResumeBuilder\" data-navigo>Resume Builder</a></button>\n <button><a href= \"Gatherings\" data-navigo>Gatherings</a></button>\n </div>\n</section>"
 };
 exports.default = _default;
 },{}],"store/Volunteer.js":[function(require,module,exports) {
@@ -314,7 +314,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   heading: 'Volunteer',
-  main: "<section>\n<h1>Train a Service Dog</h1>\n<p>Got Your Six</p>\n<section> Disabled Veterans</section>\n<p>Build Make Renovations to Houses</p>\n<p>Assist a Vet to a Medical Appointment</p>\n<section>Mentorship</section>\n<p>Mock interview</p>\n<p>Resume Editing</p>\n<p></p>\n<p></p>\n<section>\n<button></button>"
+  main: "\n<q> Coming Soon...</q>\n<section>\n<p>Train a Service Dog</p>\n<p>Got Your Six</p>\n<section> Disabled Veterans</section>\n<p>Build Make Renovations to Houses</p>\n<p>Assist a Vet to a Medical Appointment</p>\n<section>Mentorship</section>\n<p>Mock interview</p>\n<p>Resume Editing</p>\n<p></p>\n<p></p>\n<section>\n<button></button>"
 };
 exports.default = _default;
 },{}],"store/ResumeBuilder.js":[function(require,module,exports) {
@@ -329,7 +329,7 @@ var _default = {
   main: " <section class=\"form-container\">\n    <form>\n            <div>\n                <h4>Full Name</h4>\n                <input type=\"text\" name=\"fullName\" id=\"full_name\">\n            \n                <h4>Email Address</h4>\n                <input type=\"email\" name=\"email\" id=\"email\">\n            \n                <h4>Phone Number</h4>\n                <input type=\"phone\" name=\"phoneNumber\" id=\"tel\">\n            \n                <h4>Address</h4>\n                <input type=\"number,text\" name=\"address\" id=\"address_\">\n            \n                <h4>City,State, and Zipcode</h4>\n                <input type=\"text, number\" name=\"citySateZipcode\" id=\"cSZ\">\n\n                <h4>Profile</h4>\n                <textarea msg=\"text\" rows=\"40\" cols=\"40\"></textarea>\n            </div>\n    </form>\n</section>\n<button class=\"continueBtn fas-fa-arrow-circle-right\"><a href=\"ResumeBuildercon\" data-navigo>Continue</a></button"
 };
 exports.default = _default;
-},{}],"store/ResumeBuilderCon.js":[function(require,module,exports) {
+},{}],"store/ResumeBuildercon.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -340,6 +340,31 @@ var _default = {
   heading: 'Resume Builder Continued..',
   main: "<section class=\"form-container\">\n    <form>\n   <div>\n   <h2>Job Experience</h2>\n   <br>\n   <h4>Job Title</h4>\n   <input>\n   <h4>Company Name</h4>\n   <input>\n   <h4>City, State, and Zipcode</h4>\n   <input>\n   <h4>Duration of Employment</h4>\n   <input>\n   <h4>Duties and Responsibilities</h4>\n   <textarea type=\"text\" cols=\"50\" rows=\"30\"></textarea>\n</div>\n</form>\n</section>\n   <button class=\"continueBtn fas fa-arrow-circle-right\"><a href=\"ResumeBuildercon2\" data-navigo>Continue</a></button"
 };
+exports.default = _default;
+},{}],"store/ResumeBuildercon2.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  heading: 'Resume Builder Continued..',
+  main: "<p> You're almost done!! </p>\n    <section class=\"form-container\">\n    <form>\n    <div>                 \n    <h2>Education</h2>\n    <textarea></textarea>\n    <h2>Other Skills</h2>\n    <textarea></textarea>\n    </div>\n    </form>\n    </section>"
+}; //function fileReader(f) {
+//return new Promise((resolve, reject) => {
+///const r = new FileReader();
+///r.addEventListener('load', () => {
+////resolve(r.result);
+///})
+///r.addEventListener('error', (err) => {
+////r.abort();
+////reject(err)
+///})
+///r.readAsDataURL(f);
+//});
+//}
+
 exports.default = _default;
 },{}],"store/index.js":[function(require,module,exports) {
 "use strict";
@@ -407,16 +432,16 @@ Object.defineProperty(exports, "ResumeBuilder", {
     return _ResumeBuilder.default;
   }
 });
-Object.defineProperty(exports, "ResumeBuilderCon", {
+Object.defineProperty(exports, "ResumeBuildercon", {
   enumerable: true,
   get: function () {
-    return _ResumeBuilderCon.default;
+    return _ResumeBuildercon.default;
   }
 });
-Object.defineProperty(exports, "ResumeBuilderCon2", {
+Object.defineProperty(exports, "ResumeBuildercon2", {
   enumerable: true,
   get: function () {
-    return _ResumeBuilderCon.default;
+    return _ResumeBuildercon2.default;
   }
 });
 
@@ -440,10 +465,12 @@ var _Volunteer = _interopRequireDefault(require("./Volunteer"));
 
 var _ResumeBuilder = _interopRequireDefault(require("./ResumeBuilder"));
 
-var _ResumeBuilderCon = _interopRequireDefault(require("./ResumeBuilderCon"));
+var _ResumeBuildercon = _interopRequireDefault(require("./ResumeBuildercon"));
+
+var _ResumeBuildercon2 = _interopRequireDefault(require("./ResumeBuildercon2"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./About":"store/About.js","./ContactUs":"store/ContactUs.js","./CreateAnAccount":"store/CreateAnAccount.js","./EducationBenefits":"store/EducationBenefits.js","./Home":"store/Home.js","./Gallery":"store/Gallery.js","./SignIn":"store/SignIn.js","./SquaredAway":"store/SquaredAway.js","./Volunteer":"store/Volunteer.js","./ResumeBuilder":"store/ResumeBuilder.js","./ResumeBuilderCon":"store/ResumeBuilderCon.js"}],"library/slideshow.js":[function(require,module,exports) {
+},{"./About":"store/About.js","./ContactUs":"store/ContactUs.js","./CreateAnAccount":"store/CreateAnAccount.js","./EducationBenefits":"store/EducationBenefits.js","./Home":"store/Home.js","./Gallery":"store/Gallery.js","./SignIn":"store/SignIn.js","./SquaredAway":"store/SquaredAway.js","./Volunteer":"store/Volunteer.js","./ResumeBuilder":"store/ResumeBuilder.js","./ResumeBuildercon":"store/ResumeBuildercon.js","./ResumeBuildercon2":"store/ResumeBuildercon2.js"}],"library/slideshow.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -459,32 +486,53 @@ var _default = function _default() {
   var nextBtn = document.querySelector('#nextBtn'); //Counter
 
   var counter = 1;
-  var size = slideshowImages[0];
-  slideshowSlide.style.transform = 'translateX(' + -size * counter + 'px)'; //Button Listener
+  var size = slideshowSlide.clientWidth;
+  console.log({
+    slideshowSlide: slideshowSlide
+  });
+
+  function translateX(counter) {
+    return "translateX(".concat(-1 * size * counter, "px)");
+  }
+
+  slideshowSlide.style.transform = translateX(counter); //Button Listener
 
   nextBtn.addEventListener('click', function () {
+    //console.log('event fired for nextBtn')
+    console.log({
+      counter: counter,
+      translateX: translateX(counter),
+      cap: slideshowImages.length - 1,
+      slideshowSlide: slideshowSlide,
+      size: size
+    });
     if (counter >= slideshowImages.length - 1) return;
     slideshowSlide.style.transition = "transform 0.4s ease-in-out";
     counter++;
-    slideshowSlide.style.transform = 'translateX(' + -size * counter + 'px)';
+    slideshowSlide.style.transform = translateX(counter);
   });
   prevBtn.addEventListener('click', function () {
+    //console.log('event fired for prevBtn')
+    console.log({
+      counter: counter
+    });
     if (counter <= 0) return;
     slideshowSlide.style.transition = "transform 0.4s ease-in-out";
     counter--;
-    slideshowSlide.style.transform = 'translateX(' + -size * counter + 'px)';
+    slideshowSlide.style.transform = translateX(counter);
   });
   slideshowSlide.addEventListener('transitionEnd', function () {
+    //console.log('event fired for transitionEnd')
     if (slideshowImages[counter].id === 'lastClone') {
       slideshowSlide.style.transition = "none";
       counter = slideshowImages.length - 2;
-      slideshowSlide.style.transform = 'translateX(' + -size * counter + 'px)';
+      slideshowSlide.style.transform = translateX(counter);
     }
 
     if (slideshowImages[counter].id === 'firstClone') {
       slideshowSlide.style.transition = "none";
       counter = slideshowImages.length - counter;
-      slideshowSlide.style.transform = 'translateX(' + -size * counter + 'px)';
+      slideshowSlide.style.transform = translateX(counter);
     }
   });
 };
@@ -496,7 +544,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "slideshow", {
+Object.defineProperty(exports, "slideShow", {
   enumerable: true,
   get: function () {
     return _slideshow.default;
@@ -533,11 +581,11 @@ var router = new _navigo.default(location.origin);
 function render() {
   var st = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : state.Main;
   document.querySelector("#root").innerHTML = "\n ".concat((0, _components.Header)(st), "\n ").concat((0, _components.Nav)(), "\n ").concat((0, _components.Main)(st), "\n ").concat((0, _components.Footer)(), "\n ");
-  var currentpage = router.lastRouteResolved();
+  var currentPage = router.lastRouteResolved();
 
-  if (currentpage.url === "/Gallery") {
-    (0, _library.slideshow)();
-    console.log(_library.slideshow);
+  if (currentPage.url === "/Gallery") {
+    console.log('let\'s load the slideshow');
+    (0, _library.slideShow)();
   }
 
   router.updatePageLinks();
@@ -547,7 +595,7 @@ router.on({
   '/': function _() {
     return render(state['Home'].main);
   },
-  'Uontact us': function UontactUs() {
+  'ContactUs': function ContactUs() {
     return render(state['ContactUs'].main);
   },
   'Gallery': function Gallery() {
@@ -566,16 +614,16 @@ router.on({
     return render(state['ResumeBuilder'].main);
   },
   'ResumeBuildercon': function ResumeBuildercon() {
-    return render(state['ResumeBuilderCon'].main);
+    return render(state['ResumeBuildercon'].main);
   },
   'ResumeBuildercon2': function ResumeBuildercon2() {
-    return render(state['ResumeBuilderCon2'].main);
+    return render(state['ResumeBuildercon2'].main);
   },
-  'volunteer': function volunteer() {
+  'Volunteer': function Volunteer() {
     return render(state['Volunteer'].main);
   },
-  'SqaureAway': function SqaureAway() {
-    return render(state['SquareAway'].main);
+  'SquaredAway': function SquaredAway() {
+    return render(state['SquaredAway'].main);
   },
   'CreateAnAccount': function CreateAnAccount() {
     return render(state['CreateAnAccount'].main);
@@ -609,7 +657,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59478" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54016" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
