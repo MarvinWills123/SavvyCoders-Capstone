@@ -1,1 +1,1 @@
-export {default as slideShow} from "./slideshow"
+export {default as slideShow} from "./slideShow"

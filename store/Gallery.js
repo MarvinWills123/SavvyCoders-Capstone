@@ -2,7 +2,7 @@ export default {
 heading:'Gallery',
 main:`  <section>
 <div class = "slideshow-container">
-<div class = "slideshow-slide" >
+<div class = "slideshow-slide">
 <img src ="https:images.pexels.com/photos/1661818/pexels-photo-1661818.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"id="lastClone" alt="slideshowImages">
 <img src="https:images.pexels.com/photos/1564432/pexels-photo-1564432.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="slideshowImages">
 <img src= "https:images.pexels.com/photos/794576/pexels-photo-794576.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"alt="slideshowImages">
