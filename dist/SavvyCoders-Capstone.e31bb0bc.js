@@ -278,7 +278,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   heading: 'Gallery',
-  main: "  <section>\n<div class = \"slideshow-container\">\n<div class = \"slideshow-slide\">\n<img src =\"https:images.pexels.com/photos/1661818/pexels-photo-1661818.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\"id=\"lastClone\" alt=\"slideshowImages\">\n<img src=\"https:images.pexels.com/photos/1564432/pexels-photo-1564432.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\" alt=\"slideshowImages\">\n<img src= \"https:images.pexels.com/photos/794576/pexels-photo-794576.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\"alt=\"slideshowImages\">\n<img src=\"https:images.pexels.com/photos/1582492/pexels-photo-1582492.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\" alt=\"slideshowImages\">\n<img src=\"https:images.pexels.com/photos/1340504/pexels-photo-1340504.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\" alt=\"slideshowImages\">\n<img src=\"https:images.pexels.com/photos/54098/us-army-soldiers-army-men-54098.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\"alt=\"slideshowImages\">\n<img src =\"https:images.pexels.com/photos/1661818/pexels-photo-1661818.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\"alt=\"slideshowImages\">\n<img src =\"https:images.pexels.com/photos/1564432/pexels-photo-1564432.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\"id=\"firstClone\" alt=\"slideshowImages\">\n</div>\n</div>\n<button id= \"prevBtn\" class=\"fas fa-chevron-left\">Prev</button>\n<button id= \"nextBtn\" class=\"fas fa-chevron-right\">Next</button>\n</section>"
+  main: "  <section>\n<div class = \"slideshow-container\">\n<div class = \"slideshow-slide\" >\n<img src =\"https:images.pexels.com/photos/1661818/pexels-photo-1661818.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\"id=\"lastClone\" alt=\"slideshowImages\">\n<img src=\"https:images.pexels.com/photos/1564432/pexels-photo-1564432.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\" alt=\"slideshowImages\">\n<img src= \"https:images.pexels.com/photos/794576/pexels-photo-794576.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\"alt=\"slideshowImages\">\n<img src=\"https:images.pexels.com/photos/1582492/pexels-photo-1582492.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\" alt=\"slideshowImages\">\n<img src=\"https:images.pexels.com/photos/1340504/pexels-photo-1340504.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\" alt=\"slideshowImages\">\n<img src=\"https:images.pexels.com/photos/54098/us-army-soldiers-army-men-54098.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\"alt=\"slideshowImages\">\n<img src =\"https:images.pexels.com/photos/1661818/pexels-photo-1661818.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\"alt=\"slideshowImages\">\n<img src =\"https:images.pexels.com/photos/1564432/pexels-photo-1564432.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260\"id=\"firstClone\" alt=\"slideshowImages\">\n</div>\n</div>\n<button id= \"prevBtn\" class=\"fas fa-chevron-left\">Prev</button>\n<button id= \"nextBtn\" class=\"fas fa-chevron-right\">Next</button>\n</section>"
 };
 exports.default = _default;
 },{}],"store/SignIn.js":[function(require,module,exports) {
@@ -487,9 +487,6 @@ var _default = function _default() {
 
   var counter = 1;
   var size = slideshowSlide.clientWidth;
-  console.log({
-    slideshowSlide: slideshowSlide
-  });
 
   function translateX(counter) {
     return "translateX(".concat(-1 * size * counter, "px)");
@@ -498,34 +495,21 @@ var _default = function _default() {
   slideshowSlide.style.transform = translateX(counter); //Button Listener
 
   nextBtn.addEventListener('click', function () {
-    //console.log('event fired for nextBtn')
-    console.log({
-      counter: counter,
-      translateX: translateX(counter),
-      cap: slideshowImages.length - 1,
-      slideshowSlide: slideshowSlide,
-      size: size
-    });
     if (counter >= slideshowImages.length - 1) return;
     slideshowSlide.style.transition = "transform 0.4s ease-in-out";
     counter++;
     slideshowSlide.style.transform = translateX(counter);
   });
   prevBtn.addEventListener('click', function () {
-    //console.log('event fired for prevBtn')
-    console.log({
-      counter: counter
-    });
     if (counter <= 0) return;
     slideshowSlide.style.transition = "transform 0.4s ease-in-out";
     counter--;
     slideshowSlide.style.transform = translateX(counter);
   });
   slideshowSlide.addEventListener('transitionEnd', function () {
-    //console.log('event fired for transitionEnd')
     if (slideshowImages[counter].id === 'lastClone') {
       slideshowSlide.style.transition = "none";
-      counter = slideshowImages.length - 2;
+      counter = slideshowImages.length - 1;
       slideshowSlide.style.transform = translateX(counter);
     }
 
@@ -584,7 +568,6 @@ function render() {
   var currentPage = router.lastRouteResolved();
 
   if (currentPage.url === "/Gallery") {
-    console.log('let\'s load the slideshow');
     (0, _library.slideShow)();
   }
 
@@ -657,7 +640,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54016" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56122" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -20,7 +20,6 @@ function render (st=state.Main){
  `;
  const currentPage = router.lastRouteResolved();
  if (currentPage.url === "/Gallery") {
-   console.log('let\'s load the slideshow')
   slideShow();
  }
  router.updatePageLinks();
