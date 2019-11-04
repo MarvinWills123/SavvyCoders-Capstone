@@ -7,8 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "serve": "npx parcel index.html",
-    "build": "npx parcel build index.html && cp _redirects ./dist/"
+    "serve": "parcel index.html",
+    "build": "parcel build index.html && cp _redirects ./dist/"
   },
   "repository": {
     "type": "git",
