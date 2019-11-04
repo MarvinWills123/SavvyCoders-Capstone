@@ -15,6 +15,8 @@ export default{
    <input>
    <h4>Duties and Responsibilities</h4>
    <textarea type="text" cols="50" rows="30"></textarea>
+   <br>
+   <a href="">More Work Experience?</a>
 </div>
 </form>
 </section>

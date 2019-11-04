@@ -2,10 +2,10 @@ export default{
  heading:'SQUARED AWAY',
  main:`<section id="navBtn">
  <div>
- <button><a href="EducationBenefits" data-navigo>Education Benefits</a></button>
- <button><a href="Volunteer" data-navigo>Volunteer</a></button>
- <button><a href="ResumeBuilder" data-navigo>Resume Builder</a></button>
- <button><a href= "Gatherings" data-navigo>Gatherings</a></button>
+ <a href="EducationBenefits" data-navigo><h2>Education Benefits</h2></a>
+<a href="Volunteer" data-navigo><h2>Volunteer</h2></a>
+ <a href="ResumeBuilder" data-navigo><h2>Resume Builder</h2></a>
+ <a href= "Gatherings" data-navigo><h2>Gatherings</h2></a>
  </div>
 </section>`
 };
