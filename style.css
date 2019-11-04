@@ -1,4 +1,11 @@
-
+.root{
+    --primary-:(#2b3768);
+    --secondary-:(#ccc394);
+    --primary-variant:aquamarine;
+    --secondary-variant:black;
+    --base-spacing-:(10px);
+    --border-radius-:(8px);
+}
 
 /*font-family: 'Roboto Condensed', sans-serif;
 font-family: 'Noto Serif', serif;
