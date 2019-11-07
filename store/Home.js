@@ -30,9 +30,9 @@ feel free to download for personal use, or upload it to your profile with any of
 </ul>
 </section>
 </div>
-<div> 
- <button class="sign-in-btn"><a href="SignIn" data-navigo>Sign In</a></button>
- <br>
-<button class="create-account-btn"><a href="CreateAnAccount" data-navigo>Create An Account</a></button>
+<div style= padding:50px; margin: 50px; display: flex; flex-direction: column; justify-content: space-between; align-content: center;> 
+ <button><a href="SignIn" data-navigo>Sign In</a></button>
+<button><a href="CreateAnAccount" data-navigo>Create An Account</a></button>
+</div>
 </div>`
 };

@@ -10,7 +10,8 @@ export default{
     <textarea></textarea>
     </div>
     </form>
-    </section>`
+    </section>
+    <input type="submit" value= "Create Your Resume"></input>`
 }
 
 

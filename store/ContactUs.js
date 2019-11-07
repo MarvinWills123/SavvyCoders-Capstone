@@ -1,6 +1,8 @@
 export default {
 heading:"Contact Us",
-main:`<form>
+main:`
+<form>
+<div><p> How can we help you?</p></div>
 <div>
 <h4>First Name</h4>
 <input type="text" name="fname" id="first_name"> 

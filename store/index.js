@@ -10,5 +10,6 @@ export {default as Volunteer} from "./Volunteer"
 export {default as ResumeBuilder} from "./ResumeBuilder"
 export {default as ResumeBuildercon} from "./ResumeBuildercon"
 export {default as ResumeBuildercon2} from "./ResumeBuildercon2"
+export {default as Admin} from "./Admin"
 
 

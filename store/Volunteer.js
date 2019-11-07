@@ -3,16 +3,16 @@ heading:'Volunteer',
 main:`
 <q> Coming Soon...</q>
 <section>
-<p>Train a Service Dog</p>
-<p>Got Your Six</p>
-<section> Disabled Veterans</section>
-<p>Build Make Renovations to Houses</p>
+<h2>Volunteer Opportunities</h2>
+<p>Train a Service Dog with Got Your Six</p>
+<section> Assist Disabled Veterans</section>
+<p>Build Renovations to Houses</p>
 <p>Assist a Vet to a Medical Appointment</p>
-<section>Mentorship</section>
+<br>
+<h2>Mentorship</h2>
 <p>Mock interview</p>
 <p>Resume Editing</p>
 <p></p>
 <p></p>
-<section>
-<button></button>`
+<section>`
 };

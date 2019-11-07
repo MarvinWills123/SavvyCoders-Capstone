@@ -1,6 +1,7 @@
 export default {
     heading:'Create An Account',
-    main:` <form>
+    main:`
+    <form id="create-account-form" action='#'>
     <div>
         <h4>First Name</h4>
         <input type="text" name="fname" id="first_name">
@@ -15,14 +16,14 @@ export default {
         <input type="text" name="username" id="username">
     
         <h4>Password</h4>
-        <input type="password" name="password" id="password">
+        <input type="password" name="new-password" id="password">
     
         <h4>Confirm Password</h4>
-        <input type="password" name="password_confirm" id="password_confirm">
+        <input type="password" name="new-password" id="password_confirm">
     </div>
 </form>
 <br>
-<button class="create-account-btn"><a href="SquaredAway" data-navigo>Create Your Account</a></button> 
-    `
+<button type="submit" value="Create An Account" id="create-account">Create Your Account</button> 
+`
 
 };

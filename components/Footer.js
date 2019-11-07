@@ -1,7 +1,7 @@
 export default () => `
 <footer>
 <nav>
-    <ul>
+    <ul class="is-hidden--mobile is-hidden--tablet is-shown--desktop">
         <li><a href="/" data-navigo>Home</a></li> 
         <li><a href="About" data-navigo>About</a></li>
         <li><a href="ContactUs" data-navigo>Contact Us</a></li>
